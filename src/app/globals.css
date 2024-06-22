@@ -1,7 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap'); 
+
+.league-spartan-thin {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto; 
+  font-weight: 100; 
+} 
+
+.league-spartan-hairline { 
+  font-family: "League Spartan", sans-serif; 
+  font-optical-sizing: auto; 
+  font-weight: 200; 
+} 
+
+.league-spartan-light { 
+  font-family: "League Spartan", sans-serif; 
+  font-optical-sizing: auto; 
+  font-weight: 300; 
+} 
+
+.league-spartan-normal { 
+  font-family: "League Spartan", sans-serif; 
+  font-optical-sizing: auto; 
+  font-weight: 400; 
+}
+
+.league-spartan-medium { 
+  font-family: "League Spartan", sans-serif; 
+  font-optical-sizing: auto; 
+  font-weight: 500; 
+} 
+
+.league-spartan-semibold { 
+  font-family: "League Spartan", sans-serif; 
+  font-optical-sizing: auto; 
+  font-weight: 600; 
+} 
+
+.league-spartan-bold { 
+  font-family: "League Spartan", sans-serif; 
+  font-optical-sizing: auto; 
+  font-weight: 700; 
+} 
+
+.league-spartan-extrabold { 
+  font-family: "League Spartan", sans-serif; 
+  font-optical-sizing: auto; 
+  font-weight: 800; 
+} 
+
+.league-spartan-black { 
+  font-family: "League Spartan", sans-serif; 
+  font-optical-sizing: auto; 
+  font-weight: 900; 
+} 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+	font-family: "League Spartan", sans-serif;
+}
+
 body {
-  @apply flex flex-col justify-center items-center h-screen w-screen  bg-t1-main-bg
+  @apply flex flex-col justify-center items-center h-screen w-screen;
+}
+
+.calc{
+  @apply w-72
+}
+
+header{
+  @apply flex justify-between font-semibold
+}
+.theme-provider {
+  @apply grid grid-cols-2 gap-x-2;
+}
+
+.theme-toggle {
+  @apply w-full h-4 flex justify-between items-center rounded-full my-auto
+}
+
+.toggle-btn {
+  @apply w-3 h-3 rounded-full m-1 bg-t1-key-bg-red;
+}
+/* ----------------------theme 1----------------------- */
+.themeOne body {
+  @apply bg-t1-main-bg;
+}
+
+.themeOne header{
+  @apply text-t1-key-bg-orange
+}
+
+.themeOne .theme-toggle {
+  @apply bg-t1-toggle-bg;
+}
+
+
+
+/* ---------------------------theme 2-------------------------- */
+.themeTwo body {
+  @apply bg-t2-main-bg;
+}
+
+.themeTwo header{
+  @apply text-t2-text-dark
+}
+
+.themeTwo .theme-toggle {
+  @apply bg-t2-toggle-bg;
+}
+
+/* ------------------theme 3------------------- */
+.themeThree body {
+  @apply bg-t3-main-bg;
+}
+
+.themeThree header {
+  @apply text-t3-text-yellow
+}
+
+.themeThree .theme-toggle {
+  @apply bg-t3-toggle-bg;
+}
+
+.themeThree .toggle-btn{
+  @apply bg-t3-key-shadow-cyan
 }

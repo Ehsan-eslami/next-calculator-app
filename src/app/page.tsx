@@ -1,8 +1,19 @@
+import ThemeProvider from "@/components/ThemeProvider";
 
 export default function Home() {
+  
+
+
+
   return (
-   <main>
-      <p className=" text-t1-key-bg-orange">Calculator app</p>
-   </main>
+  <div className="calc">
+    <header>
+      <p className=" flex flex-col justify-end">Calc</p>
+      <ThemeProvider/>
+    </header>
+    <main>
+      main
+    </main>
+  </div>
   );
 }
