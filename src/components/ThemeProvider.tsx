@@ -21,7 +21,7 @@ export default function ThemeProvider() {
     }
   }, [theme]);
 
-  const applyTheme = (selectedTheme) => {
+  const applyTheme = (selectedTheme: string) => {
     const root = document.documentElement;
     root.classList.remove('themeOne', 'themeTwo', 'themeThree');
     root.classList.add(selectedTheme);

@@ -72,12 +72,13 @@ body {
 }
 
 .calc{
-  @apply w-72
+  @apply w-72 flex flex-col gap-4
 }
 
 header{
   @apply flex justify-between font-semibold
 }
+
 .theme-provider {
   @apply grid grid-cols-2 gap-x-2;
 }
@@ -89,6 +90,13 @@ header{
 .toggle-btn {
   @apply w-3 h-3 rounded-full m-1 bg-t1-key-bg-red;
 }
+
+
+.display{
+  @apply h-10 rounded-md p-4 text-end shadow-md text-4xl font-semibold
+}
+
+
 /* ----------------------theme 1----------------------- */
 .themeOne body {
   @apply bg-t1-main-bg;
@@ -100,6 +108,10 @@ header{
 
 .themeOne .theme-toggle {
   @apply bg-t1-toggle-bg;
+}
+
+.themeOne .display{
+  @apply bg-t1-screen-bg text-t1-text-white
 }
 
 
@@ -117,6 +129,10 @@ header{
   @apply bg-t2-toggle-bg;
 }
 
+.themeTwo .display{
+  @apply bg-t2-screen-bg text-t2-text-dark
+}
+
 /* ------------------theme 3------------------- */
 .themeThree body {
   @apply bg-t3-main-bg;
@@ -132,4 +148,8 @@ header{
 
 .themeThree .toggle-btn{
   @apply bg-t3-key-shadow-cyan
+}
+
+.themeThree .display{
+  @apply bg-t3-screen-bg text-t3-text-yellow
 }
