@@ -54,6 +54,11 @@ const config: Config = {
         't3-text-dark-blue': 'hsl(198, 20%, 13%)',
         't3-text-white': 'hsl(0, 0%, 100%)',
       },
+      boxShadow: {
+        'one': "0px 3px 0px hsl(28, 16%, 65%) ",
+        'Two': "0px 3px 0px rgba(166, 157, 145, 1)",
+        'three': "0px 3px 0px hsl(290, 70%, 36%)",
+      }
     },
   },
   plugins: [],

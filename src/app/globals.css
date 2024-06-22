@@ -72,7 +72,7 @@ body {
 }
 
 .calc{
-  @apply w-72 flex flex-col gap-4
+  @apply w-80 flex flex-col gap-4
 }
 
 header{
@@ -91,11 +91,21 @@ header{
   @apply w-3 h-3 rounded-full m-1 bg-t1-key-bg-red;
 }
 
+main{
+  @apply flex flex-col gap-2
+}
 
 .display{
   @apply h-10 rounded-md p-4 text-end shadow-md text-4xl font-semibold
 }
 
+.button-part{
+  @apply grid grid-cols-4 gap-4 p-4 rounded-md shadow-sm
+}
+
+.button{
+  @apply rounded-md px-4 py-2 text-2xl font-semibold flex flex-col justify-center items-center
+}
 
 /* ----------------------theme 1----------------------- */
 .themeOne body {
@@ -112,6 +122,14 @@ header{
 
 .themeOne .display{
   @apply bg-t1-screen-bg text-t1-text-white
+}
+
+.themeOne .button-part{
+  @apply bg-t1-keypad-bg
+}
+
+.themeOne .button{
+  @apply bg-t1-key-bg-orange  text-t1-text-dark shadow-Two
 }
 
 
@@ -133,6 +151,16 @@ header{
   @apply bg-t2-screen-bg text-t2-text-dark
 }
 
+.themeTwo .button-part{
+  @apply bg-t2-keypad-bg
+}
+
+.themeTwo .button{
+  @apply bg-t2-key-bg-yellow text-t2-text-dark shadow-Two
+}
+
+
+
 /* ------------------theme 3------------------- */
 .themeThree body {
   @apply bg-t3-main-bg;
@@ -152,4 +180,12 @@ header{
 
 .themeThree .display{
   @apply bg-t3-screen-bg text-t3-text-yellow
+}
+
+.themeThree .button-part{
+  @apply bg-t3-keypad-bg
+}
+
+.themeThree .button{
+  @apply bg-t3-key-bg-violet text-t3-text-yellow shadow-three
 }
