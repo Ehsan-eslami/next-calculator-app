@@ -77,12 +77,8 @@ Easy theming capabilities through configuration.
 - Error Handling: Learned to handle errors gracefully, providing meaningful feedback to users.
 
 ### Continued development
-I want continue working on Themeprovider and css file that becomes easier and nicer
+- I want continue working on Themeprovider and css file that becomes easier and nicer
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally 
 
 ## Author
 
