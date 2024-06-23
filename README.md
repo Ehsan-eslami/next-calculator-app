@@ -1,3 +1,100 @@
+# Frontend Mentor - Calculator app solution
+
+This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+
+
+## Overview
+
+This project is a modern web-based calculator built using Next.js, TypeScript, and Tailwind CSS. It offers a clean and user-friendly interface with the added functionality of theme customization, allowing users to choose from three distinct themes. This enhances user experience by providing visual variety and personalization options.
+
+### The challenge
+
+Users should be able to:
+
+- See the size of the elements adjust based on their device's screen size
+- Perform mathmatical operations like addition, subtraction, multiplication, and division
+- Adjust the color theme based on their preference
+- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
+
+### Screenshot
+
+![ScreenShot from live server](./public/images/Screenshot.png)
+
+### Links
+
+- Solution URL: [Solution URL](https://github.com/Ehsan-eslami/next-calculator-app)
+- Live Site URL: [Live site URL](https://next-calculator-app-six.vercel.app/)
+
+## My process
+
+### Built with
+- Next.js:
+Server-side rendering for better performance and SEO.
+Static site generation for improved load times.
+API routes for any necessary backend logic.
+
+- TypeScript:
+Strongly-typed JavaScript ensuring type safety and reducing runtime errors.
+Enhanced developer experience with better code completion and refactoring capabilities.
+
+- Tailwind CSS:
+Utility-first CSS framework for rapid UI development.
+Customizable and responsive design out of the box.
+Easy theming capabilities through configuration.
+
+### What I learned
+
+1. Next.js
+- Server-Side Rendering (SSR): Gained a deep understanding of how SSR works and its benefits for performance and SEO.
+
+2. TypeScript
+- Type Safety: Appreciated the benefits of using TypeScript for catching errors early in the development process.
+- Advanced Types: Became proficient in using advanced TypeScript features such as generics, enums, and type unions.
+
+3. Tailwind CSS
+- Utility-First CSS: Embraced the utility-first approach to quickly style components without leaving the HTML.
+- Custom Theming: Learned to customize the Tailwind configuration to create and apply different themes efficiently.
+- Responsive Design: Developed skills in building responsive interfaces that work well across various device sizes.
+
+4. React
+- Component-Based Architecture: Enhanced my understanding of breaking down the UI into reusable components.
+- State Management: Used React’s useState hook to manage local state for both the calculator logic and theme selection.
+
+5. Problem-Solving and Debugging
+- Debugging Tools: Became more adept at using browser developer tools and debugging techniques to troubleshoot issues.
+- Error Handling: Learned to handle errors gracefully, providing meaningful feedback to users.
+
+### Continued development
+I want continue working on Themeprovider and css file that becomes easier and nicer
+
+### Useful resources
+
+- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally 
+
+## Author
+
+- Website - [Ehsan Eslami](https://linktr.ee/Ehsaneslami)
+- Frontend Mentor - [@Ehsan-eslami](https://www.frontendmentor.io/profile/Ehsan-eslami)
+
+
+
+
+
+
+<!----------------------------next.js readme----------------------------->
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
