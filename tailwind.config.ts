@@ -56,8 +56,14 @@ const config: Config = {
       },
       boxShadow: {
         'one': "0px 3px 0px hsl(28, 16%, 65%) ",
+        'del-one': "0px 3px 0px hsl(224, 28%, 35%) ",
+        'e-one': "0px 3px 0px hsl(6, 70%, 34%)",
         'Two': "0px 3px 0px rgba(166, 157, 145, 1)",
+        'del-Two': "0px 3px 0px hsl(185, 58%, 25%)",
+        'e-Two': "0px 3px 0px hsl(25, 99%, 27%)",
         'three': "0px 3px 0px hsl(290, 70%, 36%)",
+        'del-three': "0px 3px 0px hsl(285, 91%, 52%)",
+        'e-three': "0px 3px 0px hsl(177, 92%, 70%)",
       }
     },
   },

@@ -96,7 +96,7 @@ main{
 }
 
 .display{
-  @apply h-10 rounded-md p-4 text-end shadow-md text-4xl font-semibold
+  @apply h-10 rounded-md p-4 text-end shadow-md text-4xl font-semibold overflow-hidden
 }
 
 .button-part{
@@ -104,7 +104,19 @@ main{
 }
 
 .button{
-  @apply rounded-md px-4 py-2 text-2xl font-semibold flex flex-col justify-center items-center
+  @apply rounded-md px-4 py-2 text-2xl font-semibold flex flex-col justify-center items-center duration-300 active:scale-95
+}
+
+.reset-button{
+  @apply  col-span-2 rounded-md px-4 py-2 text-2xl font-semibold flex flex-col justify-center items-center duration-300 text-t1-key-bg-orange active:scale-95
+}
+
+.del-button{
+  @apply rounded-md px-4 py-2 text-2xl font-semibold flex flex-col justify-center items-center text-t1-key-bg-orange duration-300 active:scale-95
+}
+
+.equal-button{
+  @apply col-span-2 rounded-md px-4 py-2 text-2xl font-semibold flex flex-col justify-center items-center duration-300 active:scale-95
 }
 
 /* ----------------------theme 1----------------------- */
@@ -129,7 +141,19 @@ main{
 }
 
 .themeOne .button{
-  @apply bg-t1-key-bg-orange  text-t1-text-dark shadow-Two
+  @apply bg-t1-key-bg-orange  text-t1-text-dark shadow-one hover:bg-t1-text-white
+}
+
+.themeOne .reset-button {
+  @apply bg-t1-key-bg shadow-del-one hover:bg-t3-key-shadow-magenta
+}
+
+.themeOne .del-button {
+  @apply bg-t1-key-bg shadow-del-one hover:bg-t3-key-shadow-magenta
+}
+
+.themeOne .equal-button {
+  @apply bg-t1-key-bg-red shadow-e-one text-t1-key-bg-orange hover:bg-t2-key-bg-orange
 }
 
 
@@ -156,8 +180,21 @@ main{
 }
 
 .themeTwo .button{
-  @apply bg-t2-key-bg-yellow text-t2-text-dark shadow-Two
+  @apply bg-t2-key-bg-yellow text-t2-text-dark shadow-Two hover:bg-t1-text-white
 }
+
+.themeTwo .reset-button {
+  @apply bg-t2-key-bg-cyan shadow-del-Two hover:bg-t3-key-shadow-magenta
+}
+
+.themeTwo .del-button {
+  @apply bg-t2-key-bg-cyan shadow-del-Two hover:bg-t3-key-shadow-magenta
+}
+
+.themeTwo .equal-button {
+  @apply bg-t2-key-bg-orange shadow-e-Two text-t1-key-bg-orange hover:bg-red-400
+}
+
 
 
 
@@ -187,5 +224,17 @@ main{
 }
 
 .themeThree .button{
-  @apply bg-t3-key-bg-violet text-t3-text-yellow shadow-three
+  @apply bg-t3-key-bg-dark-violet  text-t3-text-yellow shadow-three hover:bg-t3-key-shadow-magenta
+}
+
+.themeThree .reset-button {
+  @apply   bg-t3-key-bg-violet shadow-del-three hover:bg-t3-key-shadow-magenta
+}
+
+.themeThree .del-button {
+  @apply bg-t3-key-bg-violet shadow-del-three hover:bg-t3-key-shadow-magenta
+}
+
+.themeThree .equal-button {
+  @apply bg-t3-key-bg-cyan shadow-e-three text-t3-text-dark-blue hover:bg-t1-key-bg-orange
 }
