@@ -119,6 +119,9 @@ main{
   @apply col-span-2 rounded-md px-4 py-2 text-2xl font-semibold flex flex-col justify-center items-center duration-300 active:scale-95
 }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 100%); }
+
 /* ----------------------theme 1----------------------- */
 .themeOne body {
   @apply bg-t1-main-bg;
@@ -195,6 +198,8 @@ main{
   @apply bg-t2-key-bg-orange shadow-e-Two text-t1-key-bg-orange hover:bg-red-400
 }
 
+.themeTwo .attribution a { color: hsl(259, 81%, 34%); }
+
 
 
 
@@ -237,4 +242,8 @@ main{
 
 .themeThree .equal-button {
   @apply bg-t3-key-bg-cyan shadow-e-three text-t3-text-dark-blue hover:bg-t1-key-bg-orange
+}
+
+.themeThree footer{
+  @apply text-t3-text-yellow
 }
