@@ -1,13 +1,9 @@
 'use client'
-
-import Display from "@/components/Display";
+import Calc from "@/components/Calc";
 import ThemeProvider from "@/components/ThemeProvider";
-import { useState } from "react";
 
 export default function Home() {
-  const [display, setDisplay] = useState('11')
-  const [result, setResult] = useState('12')
-
+ 
 
   return (
   <div className="calc">
@@ -16,7 +12,7 @@ export default function Home() {
       <ThemeProvider/>
     </header>
     <main>
-     <Display result={result} display={display} />
+      <Calc />
     </main>
   </div>
   );
